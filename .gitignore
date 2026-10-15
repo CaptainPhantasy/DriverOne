@@ -1,0 +1,48 @@
+# Local build products
+/build/
+/scripts/zcode-macos
+/scripts/zcode-macos-*
+*.dSYM/
+*.o
+*.a
+
+# Private observations and runtime output
+/captures/
+/observations/
+/snapshots/
+/logs/
+*.log
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+*.png
+*.jpg
+*.jpeg
+*.zip
+*.tar
+*.gz
+
+# Credentials and local configuration
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+.ssh/
+credentials*.json
+secrets*.json
+
+# Caches, dependencies, and editor state
+__pycache__/
+*.py[cod]
+.cache/
+.pytest_cache/
+coverage/
+.venv/
+venv/
+node_modules/
+.DS_Store
+.idea/
+.vscode/

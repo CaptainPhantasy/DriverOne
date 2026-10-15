@@ -1,0 +1,79 @@
+{
+  "name": "zcode-gui-control",
+  "distribution": "source",
+  "package_version": "1.0.0",
+  "inspection_date": "2026-10-13",
+  "inspected_app": {
+    "bundle_id": "dev.zcode.app",
+    "version": "3.7.5",
+    "build": "3.7.5.4641"
+  },
+  "platform": "macOS 14 or newer",
+  "build_command": "python3 -B scripts/build_native.py",
+  "universal_build_command": "python3 -B scripts/build_native.py --universal",
+  "generated_helper": "scripts/zcode-macos",
+  "generated_helper_included": false,
+  "manifest_scope": "Distributed source files except this manifest; excludes .git and generated local build output.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 515,
+      "mode": "0o644",
+      "sha256": "460fbe7430f15d8dc0c16a36e6a48dcb01c8544fe70b77908a9cf8ead0c6efb6"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3460,
+      "mode": "0o644",
+      "sha256": "c3177b0e5f627fcbfefab8f33562fa92a38eb524ab07e8d87a95e565f6516b4b"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 7428,
+      "mode": "0o644",
+      "sha256": "bcdb161236483d558cb5b316f79e661c2e0787028670f8b15cc2c2262ae6bcd3"
+    },
+    {
+      "path": "references/gui-workflows.md",
+      "bytes": 12563,
+      "mode": "0o644",
+      "sha256": "3bad1d0f487956ec48a6ee3bf2b9828d6419dbc2d95f5e8fc927db532b6f4492"
+    },
+    {
+      "path": "references/interfaces.json",
+      "bytes": 13544,
+      "mode": "0o644",
+      "sha256": "0b6247b6e2ae1509b41a4aed97e0ea8bf65de3a9d8c4c86aaad22754692ed8fa"
+    },
+    {
+      "path": "references/verification.md",
+      "bytes": 4390,
+      "mode": "0o644",
+      "sha256": "e464d0e931e4d78f5303d5a8d3a9aae8cbcbafe595830ca4155ad788f1409b56"
+    },
+    {
+      "path": "scripts/build_native.py",
+      "bytes": 2207,
+      "mode": "0o755",
+      "sha256": "e09f5dd2fb5d0a0a10b16642900a8238845ac27b0ff78cfd4c661a9a1b895966"
+    },
+    {
+      "path": "scripts/mac_gui.swift",
+      "bytes": 53343,
+      "mode": "0o644",
+      "sha256": "f1d14673e1d9509c55c862906c3c3cdfc17c40df56b32b8fe74ec3864a8d055b"
+    },
+    {
+      "path": "scripts/zcode_control.py",
+      "bytes": 13540,
+      "mode": "0o755",
+      "sha256": "f7b45fb4ce431095cef1d841362a19def39cc43ef1ab3efeb0e96409ccb54864"
+    },
+    {
+      "path": "tests/test_driver.py",
+      "bytes": 4762,
+      "mode": "0o644",
+      "sha256": "7f9bf67332bbe5d32df03a86121a686f17c92837012096e872d422d2fca4bb3c"
+    }
+  ]
+}
