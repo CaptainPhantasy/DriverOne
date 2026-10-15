@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:gui-operation-suite:app-profile:1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "name",
+    "platform",
+    "identity"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"
+    },
+    "platform": {
+      "enum": [
+        "macos",
+        "windows",
+        "linux",
+        "web"
+      ]
+    },
+    "identity": {
+      "type": "object"
+    },
+    "expected_version": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version"
+      ],
+      "properties": {
+        "version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "build": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        }
+      }
+    },
+    "capabilities": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "electron_accessibility": {
+          "type": "boolean"
+        },
+        "routes": {
+          "type": "array",
+          "maxItems": 50,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "state",
+              "evidence"
+            ],
+            "properties": {
+              "kind": {
+                "enum": [
+                  "native",
+                  "documented_api",
+                  "browser",
+                  "image"
+                ]
+              },
+              "state": {
+                "enum": [
+                  "discovered",
+                  "inspected",
+                  "exercised",
+                  "unsupported"
+                ]
+              },
+              "evidence": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              }
+            }
+          }
+        }
+      }
+    },
+    "limits": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 100,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 4096
+      }
+    }
+  },
+  "oneOf": [
+    {
+      "properties": {
+        "platform": {
+          "const": "macos"
+        },
+        "identity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "bundle_id"
+          ],
+          "properties": {
+            "bundle_id": {
+              "type": "string",
+              "pattern": "^(?!.*\\.\\.)(?!.*\\.$)[A-Za-z0-9][A-Za-z0-9.-]{0,254}$"
+            },
+            "app_path": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4096
+            }
+          }
+        }
+      }
+    },
+    {
+      "properties": {
+        "platform": {
+          "const": "windows"
+        },
+        "identity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "executable_path"
+          ],
+          "properties": {
+            "executable_path": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4096
+            }
+          }
+        }
+      }
+    },
+    {
+      "properties": {
+        "platform": {
+          "const": "linux"
+        },
+        "identity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "executable_path"
+          ],
+          "properties": {
+            "executable_path": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4096
+            }
+          }
+        }
+      }
+    },
+    {
+      "properties": {
+        "platform": {
+          "const": "web"
+        },
+        "identity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "url_origin"
+          ],
+          "properties": {
+            "url_origin": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4096
+            }
+          }
+        }
+      }
+    }
+  ],
+  "description": "Records identity and findings only. Native app paths and origin syntax receive additional semantic checks in profile_tools.py. No record grants authority."
+}

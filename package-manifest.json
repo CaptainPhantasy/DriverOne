@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "package": "GUI Operation Skill Set",
+  "observed_date": "2026-10-13",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 384,
+      "sha256": "66b04e882b0f36a4690c83beac4a9b58d77a388d044d3c32a6ba76fb2cbe55e4",
+      "mode": "0o644"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3241,
+      "sha256": "77cabcf12d623fda08974feb8960c9c9014fa0b10175ee6fd699f8aa938b7826",
+      "mode": "0o644"
+    },
+    {
+      "path": "START-HERE.md",
+      "bytes": 4511,
+      "sha256": "6a0a0145de1011bb367042620abe9077718a46548cffe39ffc0d0fbd6ace6f4d",
+      "mode": "0o644"
+    },
+    {
+      "path": "catalog.json",
+      "bytes": 4353,
+      "sha256": "2ef65e9123c04a74be36bc1e15b01df4f205f8b95c6f3aa03f8d2ada2072ff2d",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-adapter-engineer/SKILL.md",
+      "bytes": 3428,
+      "sha256": "1a00eac1f6a3340ef8be316ce70434a944f2c6b75238af013e1670c19f30775e",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-adapter-engineer/references/platform-adapters.md",
+      "bytes": 12273,
+      "sha256": "4592fdc0fff6458df129279638b3facea4a07c878977483df71bbe882687dc8c",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-app-inspector/SKILL.md",
+      "bytes": 3404,
+      "sha256": "2a95c84258a001f19b034238baddca445f82fe79646e87dfb5e89064491b7dfa",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-app-inspector/references/inspection-method.md",
+      "bytes": 8710,
+      "sha256": "d31a8bbb63fb5c35202d22c03c632ee3f88ad327d4a2181396b8aae5572c7166",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-observation-designer/SKILL.md",
+      "bytes": 3025,
+      "sha256": "a1a70da92aad4413840aef743eb3b6a6c7270e794f7fe7272971b4c4a03645a5",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-observation-designer/references/observation-design.md",
+      "bytes": 9652,
+      "sha256": "9a8872728bd815c83f3d320c130a4ff6a69eafcb9810aac49321eb76c46d74d1",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-operator/SKILL.md",
+      "bytes": 3063,
+      "sha256": "74fef27f0440bc8469e3b26154bf668abbf956159886a8305eb78e95eb9a9513",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-operator/references/operation-loop.md",
+      "bytes": 5723,
+      "sha256": "a401aaffac91c164b26b71a2a4587bc23fb7cb44b9d115ea4a0deec74c14680d",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-recovery-engineer/SKILL.md",
+      "bytes": 3040,
+      "sha256": "9aa5c7628f6a68ba9f4aecaa2d1bcdc28e1721024b96cc6a4f9643be179848c6",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-recovery-engineer/references/failure-atlas.md",
+      "bytes": 8757,
+      "sha256": "f2af3661036302d5fd5bb8e515dff7f2718b37571096a47f9383f17f37cc1cb2",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-system-builder/SKILL.md",
+      "bytes": 3399,
+      "sha256": "2e6b3d72057edcc4efd8b12066390f2640f3fb41e9e917795cb8b50ef629fb9f",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-system-builder/assets/profiles/zcode.json",
+      "bytes": 1015,
+      "sha256": "432e086a5ccefc86710862e8318e7fb0f083491795a215f272b9129273dc6ad8",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-system-builder/assets/workflows/find-zcode-command.json",
+      "bytes": 2011,
+      "sha256": "3fb98ea523daf7cfe5950cefbc4c88c38b31b9ad678f54970b8b366f0b83a497",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-system-builder/references/build-guide.md",
+      "bytes": 5918,
+      "sha256": "9c8330a38b4692e222d3f166c696dc9ec4ede239565d0df57b4825228602862a",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-system-builder/references/control-contract.md",
+      "bytes": 7618,
+      "sha256": "42f28c3b65198dd78d634049d6c5a34e0b402ea592b538a7bf6e711f7c9713b3",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-system-builder/schemas/app-profile.schema.json",
+      "bytes": 4410,
+      "sha256": "4c0cab398218bf8ad898b3a4926fe1cc671281b4bc270a52d46b65c98e6df95b",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-system-builder/schemas/workflow.schema.json",
+      "bytes": 4006,
+      "sha256": "f7fe83380c822ffb117655fcfdfc5a1b9cc4549165a53c7e73e57ca2277cf573",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-system-builder/scripts/gui_control.py",
+      "bytes": 8953,
+      "sha256": "c9745954b450ea6e0c53f1e0d4e8a87ef4bf202d7881d7267405e11f1357e8df",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-system-builder/scripts/mac_gui.swift",
+      "bytes": 66092,
+      "sha256": "27cc8d4ad913b5568572005dc2f0d18e711abc197bf9e513639b881f7e477704",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-system-builder/scripts/profile_tools.py",
+      "bytes": 7776,
+      "sha256": "82a5a73bc3db31ee72bc26bd8dd0c9b581228fe71028863da4f41b1cf953e278",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-system-builder/tests/fixtures/fixture.swift",
+      "bytes": 9111,
+      "sha256": "7314ee6a98b3e975e4156ccd184f7af1dfade941b61cfd7100e4ceca72fda83d",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-system-builder/tests/live_fixture.py",
+      "bytes": 25129,
+      "sha256": "354167c14e2d45370cf9fcb99536ffc6134902259d818eb3ea1950a3e981bafb",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-system-builder/tests/test_contracts.py",
+      "bytes": 13239,
+      "sha256": "f6d031d7f1beb920e8a5cc30334bdba9421744aa1ebcba4d91b0ba56c6f6ac0e",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-system-verifier/SKILL.md",
+      "bytes": 3056,
+      "sha256": "d45ec9e528560ce07a145ef42b7ff6c1f7486af19c8c42fd04ade3591ab6fbff",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-system-verifier/references/acceptance-matrix.md",
+      "bytes": 4653,
+      "sha256": "dcd01d17ca3461372d6f426bbd39f682836832fbf042c1a922cdad2834a16491",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-workflow-author/SKILL.md",
+      "bytes": 3120,
+      "sha256": "d0d649c270ff8e93cdf080003da5e34d323c75abcf794c96a7c5bf2b4d2f6f57",
+      "mode": "0o644"
+    },
+    {
+      "path": "gui-workflow-author/references/workflow-patterns.md",
+      "bytes": 9346,
+      "sha256": "fa4e621ca191e51c5d710da606b4862a4843bec694ada96fdbf1fc6d9c4eca59",
+      "mode": "0o644"
+    },
+    {
+      "path": "scripts/build_macos.py",
+      "bytes": 2280,
+      "sha256": "e5ff5f95bc34bd1d2e97bb3ef47d5494e97c398c6c3f3468e0712d1d9294dfc1",
+      "mode": "0o644"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 7650,
+      "sha256": "633ce4438a4c2bbbcc1ad5b100169c486145a114ff9defd348b87609cf1be214",
+      "mode": "0o644"
+    }
+  ],
+  "excluded": [
+    "package-manifest.json (self)",
+    "scratch apps",
+    "private screenshots",
+    "compiler caches",
+    "task receipts"
+  ],
+  "checksum_note": "Matching bytes only; not a security boundary or semantic-quality guarantee",
+  "distribution": "source",
+  "generated_files": [
+    "gui-system-builder/scripts/gui-macos"
+  ]
+}

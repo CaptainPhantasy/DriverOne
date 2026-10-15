@@ -1,0 +1,28 @@
+# Local build and test output
+.build/
+.driverone-build-*/
+**/.driverone-build-*/
+gui-system-builder/scripts/gui-macos
+__pycache__/
+*.py[cod]
+*.o
+*.dSYM/
+*.app/
+*.zip
+captures/
+fixture-results.json
+fixture-profile.json
+fixture-saved.txt
+
+# Owner data and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+secrets*.json
+node_modules/
+.DS_Store
+.vscode/
+.idea/

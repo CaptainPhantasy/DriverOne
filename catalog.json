@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "name": "GUI Operation Skill Set",
+  "skills": [
+    {
+      "name": "gui-system-builder",
+      "description": "Build an agent-neutral control system for a chosen GUI application, with app inspection, guarded adapters, workflow records, recovery, and real outcome checks. Use when creating or extending the system rather than only operating an existing app.",
+      "entrypoint": "gui-system-builder/SKILL.md",
+      "shared_resources": "gui-system-builder",
+      "status": "included"
+    },
+    {
+      "name": "gui-app-inspector",
+      "description": "Inspect a real GUI application and map its usable control routes, permissions, windows, controls, and workflow limits. Use before building or extending an application profile or choosing between native controls, browser control, and an application service.",
+      "entrypoint": "gui-app-inspector/SKILL.md",
+      "shared_resources": "gui-system-builder",
+      "status": "included"
+    },
+    {
+      "name": "gui-observation-designer",
+      "description": "Design reliable observations for a graphical app, including exposed controls, screenshots, custom canvases, native dialogs, virtualized lists, text fields, and loading states. Define exact target selection and coordinate mapping before an agent acts.",
+      "entrypoint": "gui-observation-designer/SKILL.md",
+      "shared_resources": "gui-system-builder",
+      "status": "included"
+    },
+    {
+      "name": "gui-adapter-engineer",
+      "description": "Build and verify the operating-system, browser, or application adapter that connects a GUI control system to a real target. Use for native controls, screenshots, keyboard and pointer input, and documented control services.",
+      "entrypoint": "gui-adapter-engineer/SKILL.md",
+      "shared_resources": "gui-system-builder",
+      "status": "included"
+    },
+    {
+      "name": "gui-workflow-author",
+      "description": "Write and exercise complete graphical-app workflows with exact targets, starting conditions, observed steps, saved-state checks, and recovery from uncertain results. Cover editors, files, dialogs, terminals, model tasks, account forms, and custom canvases without relying on fixed clicks.",
+      "entrypoint": "gui-workflow-author/SKILL.md",
+      "shared_resources": "gui-system-builder",
+      "status": "included"
+    },
+    {
+      "name": "gui-operator",
+      "description": "Operate an application through an existing verified control adapter, using fresh observations and checks of the user's intended result. Use for actual GUI tasks, including documents, settings, navigation, forms, and records.",
+      "entrypoint": "gui-operator/SKILL.md",
+      "shared_resources": "gui-system-builder",
+      "status": "included"
+    },
+    {
+      "name": "gui-recovery-engineer",
+      "description": "Recover graphical-app work from stale targets, wrong windows, missing permissions, ignored input, uncertain acknowledgments, loading, version changes, and lost connections. Diagnose the failed layer, preserve completed changes, and verify a supported alternate route before resuming.",
+      "entrypoint": "gui-recovery-engineer/SKILL.md",
+      "shared_resources": "gui-system-builder",
+      "status": "included"
+    },
+    {
+      "name": "gui-system-verifier",
+      "description": "Verify a GUI control system and its actual application workflows, including target guards, saved state, recovery, and version limits. Use when checking a new adapter, a changed app, or a claimed completed GUI result.",
+      "entrypoint": "gui-system-verifier/SKILL.md",
+      "shared_resources": "gui-system-builder",
+      "status": "included"
+    }
+  ],
+  "included_runtime": {
+    "platform": "macos",
+    "minimum_os": "14.0",
+    "architectures": [
+      "arm64",
+      "x86_64"
+    ],
+    "driver": "gui-system-builder/scripts/gui_control.py"
+  },
+  "build_guides_for": [
+    "windows",
+    "linux",
+    "web",
+    "documented app interfaces"
+  ],
+  "records": {
+    "profile_schema": "gui-system-builder/schemas/app-profile.schema.json",
+    "workflow_schema": "gui-system-builder/schemas/workflow.schema.json"
+  },
+  "verification": "verification.md",
+  "installation": "START-HERE.md",
+  "portability_note": "Register or read the eight sibling skill folders together. Harness-specific discovery must be verified locally."
+}

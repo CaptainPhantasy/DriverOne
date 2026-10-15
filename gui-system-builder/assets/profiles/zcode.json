@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "name": "zcode",
+  "platform": "macos",
+  "identity": {
+    "bundle_id": "dev.zcode.app",
+    "app_path": "/Applications/ZCode.app"
+  },
+  "expected_version": {
+    "version": "3.7.5",
+    "build": "3.7.5.4641"
+  },
+  "capabilities": {
+    "electron_accessibility": true,
+    "routes": [
+      {
+        "kind": "native",
+        "state": "exercised",
+        "evidence": "Earlier ZCode task exercised actual controls. This suite separately verifies its generalized runtime; see the suite verification record."
+      }
+    ]
+  },
+  "limits": [
+    "Version pin describes the inspected installation; reinspect after an update.",
+    "Installed source revealed private app and remote methods. These are inspected findings, not a supported documented control interface; the observed updater and sign-in listeners do not drive the GUI.",
+    "Remote server routes and paid model submissions were not exercised.",
+    "The generic native adapter requires a readable application window."
+  ]
+}

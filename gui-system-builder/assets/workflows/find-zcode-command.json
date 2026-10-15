@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "find-zcode-command",
+  "profile_name": "zcode",
+  "goal": "Find the actual /chain-feature user command in ZCode and restore the original search text.",
+  "preconditions": [
+    "User permits local navigation and a reversible search.",
+    "Current app identity and version match the profile.",
+    "Save the original search field value before changing it."
+  ],
+  "steps": [
+    {
+      "id": "commands-page",
+      "intent": "Open Settings and the Commands section using current exposed controls; if already there, inspect it.",
+      "selector": {
+        "role": "AXButton",
+        "label": "Commands",
+        "context": [
+          "Settings sidebar"
+        ]
+      },
+      "action": "press",
+      "expected": [
+        "The Commands heading and user command list appear."
+      ],
+      "repetition": "safe-after-check"
+    },
+    {
+      "id": "filter",
+      "intent": "Replace the Commands search field with chain-feature after a fresh observation.",
+      "selector": {
+        "role": "AXTextField",
+        "context": [
+          "Commands heading and command-list search"
+        ]
+      },
+      "action": "set-value",
+      "expected": [
+        "The field contains chain-feature exactly.",
+        "A separate command row names /chain-feature."
+      ],
+      "repetition": "safe-after-check"
+    },
+    {
+      "id": "restore",
+      "intent": "Restore the exact original saved search value and verify it.",
+      "selector": {
+        "role": "AXTextField",
+        "context": [
+          "Commands section"
+        ]
+      },
+      "action": "set-value",
+      "expected": [
+        "The original field value is restored exactly."
+      ],
+      "repetition": "safe-after-check"
+    }
+  ],
+  "completion": [
+    "The actual separate /chain-feature row was observed.",
+    "Search text was restored exactly.",
+    "No model task was submitted."
+  ],
+  "restoration": [
+    "Restore the original field text; preserve existing commands and switches."
+  ]
+}
