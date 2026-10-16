@@ -49,7 +49,7 @@ An app-specific documented interface is useful only if its process, version, tar
 This source repository builds the helper with `python3 scripts/build_macos.py` at its root. The result contains Apple Silicon and Intel slices. The verification record distinguishes compilation from execution. To rebuild for the current Mac with installed Xcode command-line tools:
 
 ```sh
-xcrun swiftc -O -parse-as-library -swift-version 5 scripts/mac_gui.swift -o /tmp/gui-macos-rebuilt
+xcrun swiftc -O -parse-as-library -swift-version 5 "$BUILDER_DIR/scripts/mac_gui.swift" -o /tmp/gui-macos-rebuilt
 ```
 
 To produce the supplied two-architecture form, compile separately with `-target arm64-apple-macosx14.0` and `-target x86_64-apple-macosx14.0`, then combine with `lipo -create`. Keep the original package and test the new executable before replacing it.

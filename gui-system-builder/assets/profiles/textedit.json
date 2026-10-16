@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "name": "textedit",
+  "platform": "macos",
+  "identity": {
+    "bundle_id": "com.apple.TextEdit",
+    "app_path": "/System/Applications/TextEdit.app"
+  },
+  "limits": [
+    "This example identifies the built-in Mac TextEdit app. Verify the actual installation and version with info before use.",
+    "No version is pinned in this starter profile. Add a pin only after inspecting the intended installation.",
+    "Use a scratch document for first input; a successful read does not prove a saved document workflow."
+  ]
+}

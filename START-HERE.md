@@ -15,6 +15,10 @@ Start with `gui-system-builder/SKILL.md` to build a system. Start with `gui-oper
 | gui-recovery-engineer | Diagnose failures and reconcile unknown results before retrying |
 | gui-system-verifier | Test controls, saved outcomes, wrong-target refusal, and package delivery |
 
+## Guides for people operating the app
+
+Start with the [QuickStart](docs/QUICKSTART.md) for a first read. Use the [user manual](docs/USER-MANUAL.md) for commands and complete workflows, and [troubleshooting](docs/TROUBLESHOOTING.md) for a refusal, changed target, or uncertain result. Their images explain the method; use the actual saved app observation to select targets.
+
 ## What runs now
 
 The included Mac adapter reads a running app, captures one selected window, reads exposed controls, raises a window, performs exposed actions, replaces editable text, inserts Unicode text, sends shortcuts, clicks, scrolls, and drags. Every call names an app profile. Input checks the app installation, process generation, profile, window, focus, current field, and pointer ownership as applicable. Private text can be supplied on standard input instead of command arguments.

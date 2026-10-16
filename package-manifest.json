@@ -11,20 +11,56 @@
     },
     {
       "path": "README.md",
-      "bytes": 3241,
-      "sha256": "77cabcf12d623fda08974feb8960c9c9014fa0b10175ee6fd699f8aa938b7826",
+      "bytes": 6198,
+      "sha256": "14ca1cd7544883ae31c75b88891670e0087ae245f94005fbc2d01d3e01c35652",
       "mode": "0o644"
     },
     {
       "path": "START-HERE.md",
-      "bytes": 4511,
-      "sha256": "6a0a0145de1011bb367042620abe9077718a46548cffe39ffc0d0fbd6ace6f4d",
+      "bytes": 4886,
+      "sha256": "c6f39f930616496abafd2cb9d64b08dc1bf7ab65a13ddce302b11f203865435c",
       "mode": "0o644"
     },
     {
       "path": "catalog.json",
       "bytes": 4353,
       "sha256": "2ef65e9123c04a74be36bc1e15b01df4f205f8b95c6f3aa03f8d2ada2072ff2d",
+      "mode": "0o644"
+    },
+    {
+      "path": "docs/QUICKSTART.md",
+      "bytes": 7178,
+      "sha256": "d3ba37d485af22feeb22c11fafd2325c4269c3cc71399b6bd89f4fbb2b77bd4d",
+      "mode": "0o644"
+    },
+    {
+      "path": "docs/TROUBLESHOOTING.md",
+      "bytes": 20683,
+      "sha256": "4c3331deccade2862bcb396edfcaa6f720eb9b46e96b7477df1545dc72743c36",
+      "mode": "0o644"
+    },
+    {
+      "path": "docs/USER-MANUAL.md",
+      "bytes": 22883,
+      "sha256": "dfcf7fb40d861a5239561fbb308efd3ab9b9a5d15d165c44ad76396d2280736d",
+      "mode": "0o644"
+    },
+    {
+      "path": "docs/images/control-loop.png",
+      "bytes": 2123015,
+      "sha256": "38ea851a4fd29c4d8184fe7ea8cf003e2ebe770fe4067f1b97a81239083ee4ea",
+      "mode": "0o644"
+    },
+    {
+      "path": "docs/images/quickstart.png",
+      "bytes": 2215930,
+      "sha256": "7be722458dde616e1ba9978b37c5525b5caf757e050dd361a772b33bf5cec5a9",
+      "mode": "0o644"
+    },
+    {
+      "path": "docs/images/recovery.png",
+      "bytes": 2025267,
+      "sha256": "4035431b24cfe62dffd953dbc077c752ca5d71c6cbeb9056f8b979ecc297951d",
       "mode": "0o644"
     },
     {
@@ -94,6 +130,12 @@
       "mode": "0o644"
     },
     {
+      "path": "gui-system-builder/assets/profiles/textedit.json",
+      "bytes": 547,
+      "sha256": "484d8a6109d9ac7eda7a79c5eb7b6bd6dc50baf04756b085015e23c844b5eea6",
+      "mode": "0o644"
+    },
+    {
       "path": "gui-system-builder/assets/profiles/zcode.json",
       "bytes": 1015,
       "sha256": "432e086a5ccefc86710862e8318e7fb0f083491795a215f272b9129273dc6ad8",
@@ -107,8 +149,8 @@
     },
     {
       "path": "gui-system-builder/references/build-guide.md",
-      "bytes": 5918,
-      "sha256": "9c8330a38b4692e222d3f166c696dc9ec4ede239565d0df57b4825228602862a",
+      "bytes": 5933,
+      "sha256": "01e4ae1e826c7a1656503f85c6e5119e7b122568220ee2ad0bc6f1afdb42630c",
       "mode": "0o644"
     },
     {
@@ -213,5 +255,6 @@
   "distribution": "source",
   "generated_files": [
     "gui-system-builder/scripts/gui-macos"
-  ]
+  ],
+  "documentation_updated": "2026-10-15"
 }
